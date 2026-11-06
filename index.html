@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMP LASHES - ขนตาปลอมจับช่อสายฝอ</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background-color: #0b0612;
+            color: #e6e6e6;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(180deg, #180928 0%, #0b0612 100%);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #8a2be2;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d8b4fe;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav a {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: #c084fc;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(circle, rgba(88,28,135,0.4) 0%, rgba(11,6,18,1) 70%);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px #9333ea;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #c084fc;
+            margin-bottom: 25px;
+        }
+
+        /* Products Section */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #d8b4fe;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #9333ea;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #160d27;
+            border: 1px solid #3b0764;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #a855f7;
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.3);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 1px solid #2e1065;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 15px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #c084fc;
+        }
+
+        .btn-buy {
+            background: linear-gradient(135deg, #7e22ce, #a855f7);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-buy:hover {
+            background: linear-gradient(135deg, #9333ea, #c084fc);
+            box-shadow: 0 0 10px #a855f7;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #12071f;
+            padding: 60px 20px;
+            margin-top: 50px;
+            border-top: 1px solid #3b0764;
+        }
+
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1a0b2e;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #581c87;
+        }
+
+        .contact-box h3 {
+            color: #d8b4fe;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .contact-item span {
+            color: #c084fc;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #07030a;
+            color: #6b7280;
+            font-size: 14px;
+            border-top: 1px solid #1f1135;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">VAMP<span>LASHES</span></div>
+        <nav>
+            <a href="#home">หน้าแรก</a>
+            <a href="#products">สินค้า</a>
+            <a href="#contact">ติดต่อเรา</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <h1>ขนตาจับช่อสายฝอ Premium DIY</h1>
+        <p>สะกดทุกสายตา เพิ่มเสน่ห์แบบสาวฝรั่ง ติดง่าย น้ำหนักเบา สวยเป๊ะตลอดวัน</p>
+    </section>
+
+    <!-- Product List -->
+    <div class="container" id="products">
+        <h2 class="section-title">สินค้าของเรา</h2>
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=600&q=80" alt="ขนตาจับช่อสายฝอ Mix Size" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Fox Eye Volume Mix (8-16mm)</h3>
+                    <p class="product-desc">ขนตาจับช่อสำเร็จรูปความยาวผสม
